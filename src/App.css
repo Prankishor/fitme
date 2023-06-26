@@ -32,6 +32,11 @@
     padding: 0.25rem 0;
 }
 
+.navbar_links p:hover {
+    color: orange;
+    transition: ease-in-out .2s;
+}
+
 .navbar_links p:before {
     content: "";
     position: absolute;
@@ -63,6 +68,7 @@
 }
 
 
+
 /*HOME*/
 
 .home_container {
@@ -74,7 +80,6 @@
 }
 
 .home_container h1 {
-    font-weight: 550;
     background: linear-gradient(to right, rgb(248, 122, 4), rgb(0, 0, 0));
     background-clip: text;
     -webkit-background-clip: text;
@@ -88,9 +93,10 @@
     padding-right: 2rem;
 }
 
+
 .chat {
     margin-top: 1rem;
-    padding: 0.8rem 4rem;
+    padding: 0.8rem 3.5rem;
     border-radius: 8px;
     margin-right: 1rem;
     font-size: 16px;
@@ -98,16 +104,43 @@
     background-color: orange;
     color: white;
     font-weight: 600;
+    transition: ease-in-out 0.2s;
 }
 
 .knowmore {
     margin-top: 1rem;
-    padding: 0.8rem 4rem;
+    padding: 0.8rem 3.5rem;
     border-radius: 8px;
     margin-left: 1rem;
     font-size: 16px;
-    border: 1px solid orange;
+    border: 2px solid orange;
     background-color: white;
     font-weight: 600;
     color: orange;
+    transition: ease-in-out 0.2s;
+}
+
+.chat:hover {
+    border-radius: 18px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.knowmore:hover {
+    border-radius: 18px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.tagline {
+    font-family: 'Exo', sans-serif;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: 800;
+    font-size: xxx-large;
+    margin-bottom: 2rem;
+}
+
+.tagdesc {
+    font-weight: 400;
+    font-size: 20px;
 }
