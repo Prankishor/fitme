@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+/*Navbar*/
+.navbar {
+    display: flex;
+    margin: 1rem 2rem;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar_links {
+    display: flex;
+    justify-content: flex-end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar_logo {
+    color: orange;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar_logo p {
+    font-family: 'Exo', sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+    color: black;
+    padding: 0.25rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar_links p {
+    margin: 0 2rem;
+    font-size: large;
+    color: black;
+    position: relative;
+    padding: 0.25rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar_links p:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar_links p:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.navbar_links p a {
+    text-decoration: none;
+    color: black;
+}
+
+.block1 {
+    border: 1px solid orange;
+}
+
+.active p {
+    color: orange;
+}
+
+
+/*HOME*/
+
+.home_container {
+    margin: 1rem 2rem;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home_container h1 {
+    font-weight: 550;
+    background: linear-gradient(to right, rgb(248, 122, 4), rgb(0, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero_image img {
+    height: 80vh;
+    width: 100%;
+    border-radius: 50% 0 0 50%;
+    padding-right: 2rem;
+}
+
+.chat {
+    margin-top: 1rem;
+    padding: 0.8rem 4rem;
+    border-radius: 8px;
+    margin-right: 1rem;
+    font-size: 16px;
+    border: 1px solid orange;
+    background-color: orange;
+    color: white;
+    font-weight: 600;
+}
+
+.knowmore {
+    margin-top: 1rem;
+    padding: 0.8rem 4rem;
+    border-radius: 8px;
+    margin-left: 1rem;
+    font-size: 16px;
+    border: 1px solid orange;
+    background-color: white;
+    font-weight: 600;
+    color: orange;
 }
