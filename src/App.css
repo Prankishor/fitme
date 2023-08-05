@@ -1,3 +1,20 @@
+body {
+    /* background: linear-gradient(to right, rgb(239, 239, 239), rgb(241, 160, 109)); */
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /*Navbar*/
 .navbar {
     display: flex;
@@ -5,6 +22,10 @@
     padding: 2rem 3rem;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(to right, rgb(255, 255, 255), orange);
+    border-radius: 20px;
+    height: 5rem;
+
 }
 
 .navbar_links {
@@ -33,7 +54,7 @@
 }
 
 .navbar_links p:hover {
-    color: orange;
+    color: white;
     transition: ease-in-out .2s;
 }
 
@@ -44,7 +65,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: orange;
+    background-color: white;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -64,7 +85,7 @@
 }
 
 .active p {
-    color: orange;
+    color: white;
 }
 
 
@@ -87,10 +108,10 @@
 }
 
 .hero_image img {
-    height: 80vh;
-    width: 100%;
-    border-radius: 50% 0 0 50%;
-    padding-right: 2rem;
+    height: 70vh;
+    width: 115%;
+    /* border-radius: 50% 0 0 50%; */
+    /* padding-right: 2rem; */
 }
 
 
@@ -143,4 +164,71 @@
 .tagdesc {
     font-weight: 400;
     font-size: 20px;
+}
+
+
+/*Exercise Card */
+
+.exercise_items {
+    margin: 1rem 2rem;
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+    column-gap: 2rem;
+
+}
+
+.workout_cards {
+    transition: transform .2s;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid rgb(187, 16, 16);
+
+}
+
+.workout_cards:hover {
+    transform: scale(1.1);
+}
+
+.text_capsules {
+    display: flex;
+}
+
+.workout_bodypart {
+    color: white;
+    background-color: rgb(210, 77, 77);
+    border: none;
+    border-radius: 25px;
+    padding: 0.3rem 0.8rem;
+    text-transform: capitalize;
+    margin-left: 1rem;
+    font-weight: 500;
+    font-size: medium;
+
+}
+
+.workout_target {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 0.3rem 0.8rem;
+    text-transform: capitalize;
+    margin-left: 1rem;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.workout_name {
+    padding: 0.5rem 0 0 0;
+    text-align: left;
+    margin-left: 1rem;
+    text-transform: capitalize;
+}
+
+.note {
+    margin: 1rem 2rem;
+    padding: 2rem 3rem;
 }
