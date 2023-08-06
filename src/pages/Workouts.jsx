@@ -15,11 +15,11 @@ const Workouts = () => {
             {error ? (
                 <>Oh no, there was an error</>
             ) : isLoading ? (
-                <>Loading...</>
+                <div className='loading'>Loading...</div>
             ) : data ? (
                 <div className='exercise_items'>
                     {data.map((d, i) => (
-                        <div className='workout_cards'>
+                        <div key={i} className='workout_cards'>
                             <img className='workout_gif' src={d.gifUrl} alt={d.name} loading="lazy" />
                             <div className='text_capsules'>
                                 <h3 className="workout_bodypart">{d.bodyPart}</h3>
