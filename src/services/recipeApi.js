@@ -16,9 +16,9 @@ export const recipeApi = createApi({
     }),
     endpoints: (builder) => ({
         getRecipe: builder.query({
-            query: () => ({
+            query: (foodItem) => ({
                 url: `search`,
-                params: { q: `chicken` },
+                params: { q: `${foodItem}` },
             })
         }),
     }),

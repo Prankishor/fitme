@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useGetRecipeQuery } from '.././services/recipeApi'
 
 const Nutrition = () => {
 
-    const { data, error, isLoading } = useGetRecipeQuery()
-    //console.log(data.hits);
+    const [searchTerm, setSearchTerm] = useState('')
+    //Making it default as generic api for fetching all recipe's or explore recipe not available
+    const [execSearch, setExecSearch] = useState('diet')
+    const { data, error, isLoading } = useGetRecipeQuery(execSearch)
+    const handleSearch = (food) => {
+        setExecSearch(searchTerm)
+    }
 
     return (
         <div>
             <div className='header_nutrition'>
                 <div className='search_container'>
-                    <input type="text" className='search' name="search" placeholder='Enter a food item'></input>
-                    <button className='searchbtn'>Search</button>
+                    <input type="text" className='search' name="search" placeholder='Enter a food item'
+                        onChange={(e) => { setSearchTerm(e.target.value) }}></input>
+                    <button className='searchbtn' onClick={(e) => handleSearch(searchTerm)}>Search</button>
                 </div>
                 <div className='quote_container'>
                     <span className='quote'>"Optimum nutrition is the medicine of tomorrow."</span>

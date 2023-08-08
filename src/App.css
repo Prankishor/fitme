@@ -279,6 +279,7 @@ body {
     border: none;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: medium;
 }
 
 .search::placeholder {
@@ -325,6 +326,7 @@ input:focus::placeholder {
 
 .recipe_img {
     border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
 .recipe_card {
