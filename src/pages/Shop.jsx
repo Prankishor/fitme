@@ -2,8 +2,8 @@ import React from 'react'
 
 const Shop = () => {
     return (
-        <div>
-            <h1>SHOP!!!!!</h1>
+        <div className='shop'>
+            <h1 className='shopHeading'>Page Under Maintanence</h1>
         </div>
     )
 }

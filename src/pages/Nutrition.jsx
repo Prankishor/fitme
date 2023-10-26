@@ -5,8 +5,9 @@ const Nutrition = () => {
 
     const [searchTerm, setSearchTerm] = useState('')
     //Making it default as generic api for fetching all recipe's or explore recipe not available
-    const [execSearch, setExecSearch] = useState('diet')
+    const [execSearch, setExecSearch] = useState('Fish')
     const { data, error, isLoading } = useGetRecipeQuery(execSearch)
+    //console.log(data.meals);
     const handleSearch = (food) => {
         setExecSearch(searchTerm)
     }
@@ -37,13 +38,13 @@ const Nutrition = () => {
                 ) : data ? (
                     <div className='recipe_container'>
 
-                        {data.hits.map((d, i) => (
+                        {data.meals.map((d, i) => (
                             <div className='recipe_card' key={i}>
-                                <h2 className='recipe_name'>{d.recipe.label}</h2>
-                                <img className='recipe_img' src={d.recipe.image} alt='recipe' />
+                                <h2 className='recipe_name'>{d.strMeal}</h2>
+                                <img className='recipe_img' src={d.strMealThumb} alt='recipe' />
                                 <div className='capsules'>
-                                    <h3 className='cal'>Calories : {parseInt(d.recipe.calories)}</h3>
-                                    <h3 className='workout_target cus'>Cuisine: {d.recipe.cuisineType[0]}</h3>
+                                    <h3 className='cal'>Calories : {"NA"}</h3>
+                                    <h3 className='workout_target cus'>Cuisine: {d.strArea}</h3>
                                 </div>
                             </div>
                         ))

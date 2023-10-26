@@ -109,7 +109,6 @@ body {
 
 .hero_image img {
     height: 70vh;
-    width: 115%;
     /* border-radius: 50% 0 0 50%; */
     /* padding-right: 2rem; */
 }
@@ -171,13 +170,11 @@ body {
 
 .exercise_items {
     margin: 1rem 2rem;
-    padding: 2rem 3rem;
+    padding: 1rem 2rem;
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
     row-gap: 2rem;
     column-gap: 2rem;
-
 }
 
 .workout_cards {
@@ -185,7 +182,6 @@ body {
     padding: 2rem;
     text-align: center;
     border-bottom: 2px solid rgb(187, 16, 16);
-
 }
 
 .workout_cards:hover {
@@ -228,150 +224,45 @@ body {
     text-transform: capitalize;
 }
 
-.note {
-    margin: 1rem 2rem;
-    padding: 2rem 3rem;
-}
 
-/*Nutrients Page*/
-
-.header_nutrition {
+.pagination-container {
+    margin-bottom: 2rem;
+    padding: 2rem 15rem;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.quote_container {
-    padding: 2rem;
-    margin-top: 2rem;
+.pagenumber {
     text-align: center;
-    background: linear-gradient(to right, rgb(248, 122, 4), rgb(0, 0, 0));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.quote {
-    font-family: 'Nothing You Could Do', cursive;
-    font-weight: 800;
-    font-size: x-large;
-}
-
-.author {
-    text-align: center;
-    font-family: 'Nothing You Could Do', cursive;
-    font-weight: 800;
     font-size: large;
-}
-
-.search_container {
-    text-align: center;
-    margin: 3rem 2rem;
-    padding: 2rem 3rem;
-}
-
-.search {
-    text-align: center;
-    padding: 1rem 1rem;
-    width: 30rem;
-    height: 3rem;
-    margin-right: 1rem;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-size: medium;
-}
-
-.search::placeholder {
-    text-align: center;
-    font-size: medium;
-}
-
-input:focus::placeholder {
-    color: transparent;
-}
-
-.search:focus {
-    outline: none;
-
-}
-
-.searchbtn {
-    margin-left: 1rem;
-    width: 10rem;
-    height: 3rem;
-    border-radius: 8px;
-    font-size: 16px;
-    border: 1px solid orange;
+    padding: 0.5rem 1rem;
+    border-color: white;
     background-color: orange;
     color: white;
-    font-weight: 600;
-    transition: ease-in-out 0.2s;
+    border-radius: 10%;
+    margin: 0 0.1rem;
 }
 
-.searchbtn:hover {
-    border-radius: 18px;
+.pagenumber:hover {
     cursor: pointer;
-}
-
-.recipe_container {
-    margin: 1rem 2rem;
-    padding: 2rem 3rem;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
-    row-gap: 4rem;
-    column-gap: 2rem;
-}
-
-.recipe_img {
-    border-radius: 50%;
-    margin-bottom: 1rem;
-}
-
-.recipe_card {
-    text-align: center;
-    transition: transform .2s;
-}
-
-.recipe_card:hover {
+    background-color: rgb(187, 124, 7);
     transform: scale(1.1);
-    cursor: pointer;
 }
 
-.recipe_name {
-    font-weight: 500;
-    border-bottom: 2px solid orange;
-    margin-bottom: 1rem;
-}
+/*Shop*/
 
-.capsules {
+.shop {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
 }
 
-.cal {
-    color: white;
-    background-color: rgb(210, 77, 77);
-    border: none;
-    border-radius: 25px;
-    padding: 0.3rem 0.8rem;
-    text-transform: capitalize;
-    margin-left: 1rem;
-    font-weight: 500;
-    font-size: medium;
-}
-
-.results {
-    margin: 1rem 2rem;
-    padding: 2rem 3rem;
-    text-align: center;
-}
-
-.results h1 {
-    font-weight: 500;
-}
-
-.loading {
-    text-align: center;
+.aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }

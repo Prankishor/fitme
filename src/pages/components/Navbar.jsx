@@ -17,9 +17,9 @@ const Navbar = () => {
                 <NavLink to='/workouts' style={{ textDecoration: "none" }} >
                     <p>Workouts</p>
                 </NavLink>
-                <NavLink to='/nutrition' style={{ textDecoration: "none" }}>
+                {/* <NavLink to='/nutrition' style={{ textDecoration: "none" }}>
                     <p>Nutrition</p>
-                </NavLink>
+                </NavLink> */}
                 <NavLink to='/shop' style={{ textDecoration: "none" }} >
                     <p>Shop</p>
                 </NavLink>

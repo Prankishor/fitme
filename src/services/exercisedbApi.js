@@ -16,13 +16,10 @@ export const exercisedbApi = createApi({
     }),
     endpoints: (builder) => ({
         getExercises: builder.query({
-
             query: () => `exercises`,
 
         }),
     }),
 })
 
-// Export hooks for usage in functional components, which are
-// auto-generated based on the defined endpoints
 export const { useGetExercisesQuery } = exercisedbApi

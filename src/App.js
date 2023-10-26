@@ -8,7 +8,7 @@ import Nutrition from './pages/Nutrition';
 import Workouts from './pages/Workouts';
 import Aboutus from './pages/Aboutus';
 
-import Navbar from './components/Navbar';
+import Navbar from './pages/components/Navbar';
 
 function App() {
   return (
