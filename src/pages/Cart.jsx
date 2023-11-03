@@ -103,7 +103,7 @@ function Cart() {
                                 <span className="amount">${cart.cartTotalAmount}</span>
                             </div>
                             <p>Taxes and shipping calculated at checkout</p>
-                            <button>Check out</button>
+                            <button><a className="check_out_btn" href='https://buy.stripe.com/test_cN2cMU750eRsc12288'>Check out</a></button>
                             <div className="continue-shopping">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

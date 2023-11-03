@@ -666,3 +666,25 @@ body {
     color: white;
     border-radius: 50%;
 }
+
+.note_container h2 {
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    padding: 2rem 2rem;
+
+
+    font-size: 40px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 800;
+    /*color: white;*/
+    background: linear-gradient(to right, rgb(248, 122, 4), rgb(231, 197, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.check_out_btn {
+    color: white;
+    text-decoration: none;
+}

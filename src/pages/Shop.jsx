@@ -6,12 +6,15 @@ import { addToCart } from '../features/cartSlice';
 import { RotatingLines } from 'react-loader-spinner'
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import { useSelector } from 'react-redux';
+import { useState } from 'react';
 
 const Shop = () => {
     const { data, error, isLoading } = useGetShoesQuery();
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const { cartTotalQuantity } = useSelector(state => state.cart)
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postPerPage] = useState(9);
 
     const handleAddToCart = (product) => {
         dispatch(addToCart(product))
@@ -47,6 +50,26 @@ const Shop = () => {
             </div>)
     }
 
+
+    const indexOfLastPost = currentPage * postPerPage
+    const indexOfFirstPost = indexOfLastPost - postPerPage
+    const posts = data.slice(indexOfFirstPost, indexOfLastPost);
+    const pageNumbers = [];
+
+    const paginate = (pageNum) => {
+        setCurrentPage(pageNum)
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        })
+    }
+
+    for (let i = 1; i <= 4; i++) {
+        pageNumbers.push(i)
+
+    }
+
     return (
         <>
             <div className='slogan_container'>
@@ -60,7 +83,7 @@ const Shop = () => {
             </div>
             <div className='shoes_container'>
 
-                {data.map((d, i) => (
+                {posts.map((d, i) => (
                     <div key={d.id} className='shoes_card'>
                         <img className='shoes_photo' src={d.image} alt={d.name} loading='lazy' />
                         <div className='shoe_details_container'>
@@ -70,6 +93,14 @@ const Shop = () => {
                         <button className='add_to_cart' onClick={() => handleAddToCart(d)}>Add To Cart</button>
                     </div>
                 ))}
+            </div>
+            <div className='pagination-container'>
+                <div className='page-number-container'>
+                    {pageNumbers.map((number) => (
+                        <button className='pagenumber' key={number} onClick={() => paginate(number)}>{number}</button>
+                    )
+                    )}
+                </div>
             </div>
         </>
     )

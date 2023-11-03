@@ -9,7 +9,7 @@ const Workouts = () => {
     const [searchValue, setSearchValue] = useState('')
     const { data, error, isLoading } = useGetExercisesByBodyPartQuery(searchValue)
     const [currentPage, setCurrentPage] = useState(1);
-    const [postPerPage] = useState(18);
+    const [postPerPage] = useState(12);
 
     if (error) {
         return (
@@ -62,14 +62,15 @@ const Workouts = () => {
 
     // }
 
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 7; i++) {
         pageNumbers.push(i)
 
     }
     return (
         <div>
-
-            <h4 className='note'>New features coming soon!!!!</h4>
+            <div className='note_container'>
+                <h2 className='note'>A Library for WORKOUTS!</h2>
+            </div>
             <div className='search_top_container'>
                 <div className='search_container'>
                     <input type="text" className='search' name="search" placeholder=' Example: Chest' value={searchTerm}
