@@ -19,7 +19,17 @@ export const exercisedbApi = createApi({
             query: () => `exercises`,
 
         }),
+        getExercisesByBodyPart: builder.query({
+            query: (bodyPart) => ({
+                url: `https://exercisedb.p.rapidapi.com/exercises/${bodyPart}`,
+            })
+        }),
+        getExerciseDetails: builder.query({
+            query: (id) => ({
+                url: `https://exercisedb.p.rapidapi.com/exercises/exercise/${id}`,
+            })
+        }),
     }),
 })
 
-export const { useGetExercisesQuery } = exercisedbApi
+export const { useGetExercisesQuery, useGetExercisesByBodyPartQuery, useGetExerciseDetailsQuery } = exercisedbApi
