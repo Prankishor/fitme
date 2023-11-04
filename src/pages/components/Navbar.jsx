@@ -2,6 +2,11 @@ import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+    function handleSignOut(event) {
+    }
+
+
     return (
         <div className="navbar">
             <div className="navbar_logo">
@@ -26,6 +31,7 @@ const Navbar = () => {
                 <NavLink to='/aboutus' style={{ textDecoration: "none" }} >
                     <p>About Us</p>
                 </NavLink>
+                <button className='signOut' onClick={(e) => handleSignOut(e)}>Log Out</button>
             </div>
         </div>
     )

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import heroimage from '../images/main.jpg';
 
 const Home = () => {
+
     return (
         <div className='home_container'>
             <div className='home_left'>
