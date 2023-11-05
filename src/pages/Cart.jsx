@@ -13,7 +13,7 @@ function Cart() {
 
     useEffect(() => {
         dispatch(getTotals())
-    }, [cart])
+    }, [cart, dispatch])
 
 
     const handleShopping = () => {
