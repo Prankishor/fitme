@@ -43,22 +43,19 @@ const Home = () => {
                     <h1>Know More</h1>
                 </div>
                 <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse fuga quas! Iusto laboriosam consequuntur, aliquam blanditiis iure quia illum quae atque aut illo in, a libero quod! Quos, eius.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, inventore. Ratione accusantium illo reiciendis fugiat tenetur, officia sed nesciunt, possimus modi maxime error nihil necessitatibus molestiae et! Sequi, libero reiciendis!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error facilis aliquam qui rem et nisi! Voluptatum quia labore, numquam aperiam ab, ducimus, nesciunt tempore facere incidunt rerum quos expedita repellat.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit voluptates ad fugiat exercitationem voluptatum. Architecto aliquam, culpa expedita quas quos provident a, omnis facilis, dolor consectetur ab quidem sequi delectus!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique itaque unde inventore consequuntur nostrum labore ut totam a odit explicabo veniam pariatur vero fugit accusantium fugiat ea et, non fuga!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores fugit, exercitationem quis ea fugiat neque, expedita eligendi rerum unde animi repellat ab maxime? Dicta corrupti esse modi quos harum fugiat.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolores culpa numquam repudiandae in, provident, quis repellendus dolore quae ullam voluptatem quasi unde cupiditate rem nam, accusamus consequuntur nobis beatae.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis consequatur voluptatibus velit, sed eius eaque, suscipit pariatur cupiditate deserunt quidem quis inventore error ullam quisquam. Sint saepe optio incidunt praesentium!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, quae nemo natus, sit velit nam ut voluptatibus eveniet porro expedita deleniti ipsum. Molestiae aperiam necessitatibus minima illo sequi. Natus, est
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius iure pariatur molestiae, voluptate sunt aperiam accusamus voluptatum ipsam dolores, consectetur ipsum corrupti ex facere, modi alias inventore ratione voluptatem. Voluptate!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquam quis ullam, delectus, totam dignissimos molestias repellendus officiis distinctio vero hic? Commodi fuga ad, odio at perferendis deleniti ratione corrupti!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aliquid cupiditate maiores, quaerat iure cumque architecto illo omnis, consequatur eum harum quod deserunt magni eligendi eaque. Minima asperiores veniam pariatur!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt delectus laudantium dolorem molestiae consectetur perspiciatis qui velit unde voluptates accusantium cumque veritatis adipisci expedita dolores officia ut, sequi porro in!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque tempore animi, eum tempora dolorem maxime et quos, cumque veniam debitis omnis repudiandae voluptate? Voluptatem ab illum suscipit voluptas? Repudiandae, quas
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, assumenda aspernatur! Optio, nihil minima omnis quaerat, veniam dignissimos ut aliquam, consequuntur ipsum ratione incidunt excepturi enim mollitia deserunt asperiores esse.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis suscipit repellendus magni adipisci autem animi dolorem sit consequatur praesentium consequuntur accusantium tempore ducimus modi sapiente quis, necessitatibus laborum dolor iure?</p>
+                    <p className='know_more_content'>"Regular exercise and physical activity promotes strong muscles and bones. It improves respiratory, cardiovascular health, and overall health. Staying active can also help you maintain a healthy weight, reduce your risk for type 2 diabetes, heart disease, and reduce your risk for some cancers."
+                        <br></br><br></br>
+                        The aforementioned paragraph is just a fraction of benefits that you get while maintaining a healthy lifestyle.
+                        But we understand that it is not always easy to balance all the aspects of life. While chasing career specially, it becomes hard to track your diet, to go for a run, to go for a workout session while all the other work keeps knocking at your head.
+                        <br></br><br></br>
+                        But there is always a way out. And we are there to help you find that way.
+                        <br></br><br></br>
+                        FitMe is an initiative to help individuals who are stuck with their busy
+                        schedules and are finding it hard to maintain a healthy lifestyle. Being healthy or fit doesn't always need you to go to a gym, or to track calories of all the things you eat.
+                        <br></br><br></br>
+                        To join our program, register yourself in the "Chat" section.
+
+                    </p>
                 </div>
             </div>
             <div className='chat_container' id='chat'>

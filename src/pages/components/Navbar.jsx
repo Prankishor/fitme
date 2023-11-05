@@ -1,21 +1,21 @@
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from 'react-redux'
-import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom'
-import { logUserIn, logUserOut } from "../../features/loginSlice";
-import heroimage from '../../images/main.jpg';
+// import { useSelector, useDispatch } from 'react-redux'
+// import { useEffect, useState } from 'react';
+// import { useNavigate } from 'react-router-dom'
+// import { logUserIn, logUserOut } from "../../features/loginSlice";
+// import heroimage from '../../images/main.jpg';
 
 const Navbar = () => {
-    const dispatch = useDispatch();
-    const navigate = useNavigate();
+    // const dispatch = useDispatch();
+    // const navigate = useNavigate();
 
-    //Not handling session management as of now
-    function handleSignOut() {
-        dispatch(logUserOut())
-        //navigate('/logout')
-        window.location.reload();
-    }
+    // //Not handling session management as of now
+    // function handleSignOut() {
+    //     dispatch(logUserOut())
+    //     //navigate('/logout')
+    //     window.location.reload();
+    // }
 
     return (
         <div className="navbar">
@@ -41,7 +41,7 @@ const Navbar = () => {
                 <NavLink to='/aboutus' style={{ textDecoration: "none" }} >
                     <p>About Us</p>
                 </NavLink>
-                <button className='signOut' onClick={handleSignOut}>Log Out</button>
+                {/*<button className='signOut' onClick={handleSignOut}>Log Out</button>*/}
             </div>
         </div>
     )

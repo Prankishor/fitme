@@ -2,7 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 import { toast } from 'react-toastify';
 
 const initialState = {
-    user: false,
+    user: localStorage.getItem("user") ?
+        localStorage.getItem("user") :
+        false,
 }
 
 const loginSlice = createSlice({
@@ -15,6 +17,7 @@ const loginSlice = createSlice({
                 {
                     position: "bottom-left",
                 })
+            localStorage.setItem("user", true)
         },
 
         logUserOut(state, action) {
@@ -23,6 +26,7 @@ const loginSlice = createSlice({
                 {
                     position: "bottom-left",
                 })
+            localStorage.setItem("user", true)
         },
     },
 })

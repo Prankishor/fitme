@@ -744,7 +744,6 @@ body {
 
 .know_more_container {
     margin: 4rem;
-    border: 2px solid orange;
     border-radius: 8px;
     padding: 2rem;
     background: linear-gradient(to right, rgb(247, 138, 37), rgb(238, 213, 74));
@@ -755,6 +754,10 @@ body {
     margin-bottom: 2rem;
 }
 
+.know_more_content {
+    font-size: large;
+    font-style: italic;
+}
 
 /*Chat with us container*/
 
