@@ -3,6 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux'
 
 //pages
 import Home from './pages/Home';
@@ -16,20 +17,25 @@ import heroimage from './images/main.jpg';
 
 //Auth
 import { jwtDecode } from "jwt-decode"
+import { logUserIn } from './features/loginSlice';
 
 function App() {
+  const dispatch = useDispatch();
 
-  const [user, setUser] = useState(false)
+  const [login, setLogin] = useState(useSelector((state) => state.user))
+
   function handleCallbackResponse(response) {
-    //console.log("Encoded JWT ID token: " + response.credential)
+
     let userObject = jwtDecode(response.credential)
-    console.log(userObject)
     if (userObject) {
-      setUser(true)
+      dispatch(logUserIn())
+      setLogin(true)
     }
 
   }
+
   useEffect(() => {
+
     /* global google */
     google.accounts.id.initialize({
       client_id: "682949664941-6ksfl4htkfpdffttv8k8svcu0k409amv.apps.googleusercontent.com",
@@ -40,11 +46,10 @@ function App() {
       document.getElementById("signInDiv"),
       { theme: "outline", size: "large" }
     )
+
   }, [])
 
-
-  if (user === true) {
-    { console.log(user) }
+  if (login === true) {
     return (
       <BrowserRouter>
         <ToastContainer />

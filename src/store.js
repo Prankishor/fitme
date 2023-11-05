@@ -2,12 +2,14 @@ import { configureStore } from '@reduxjs/toolkit'
 import { exercisedbApi } from './services/exercisedbApi'
 import { shoesApi } from './services/shoesApi'
 import cartReducer, { getTotals } from './features/cartSlice'
+import logReducer from './features/loginSlice'
 import { setupListeners } from '@reduxjs/toolkit/dist/query';
 
 const store = configureStore({
     reducer: {
         //Adding reducers for state management
         cart: cartReducer,
+        user: logReducer,
         // Add the generated reducer as a specific top-level slice
         [exercisedbApi.reducerPath]: exercisedbApi.reducer,
         [shoesApi.reducerPath]: shoesApi.reducer,

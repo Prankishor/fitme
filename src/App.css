@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     /* background: linear-gradient(to right, rgb(239, 239, 239), rgb(241, 160, 109)); */
     animation: fadeInAnimation ease 1.5s;
@@ -734,4 +738,116 @@ body {
 .check_out_btn {
     color: white;
     text-decoration: none;
+}
+
+/*Know More Section*/
+
+.know_more_container {
+    margin: 4rem;
+    border: 2px solid orange;
+    border-radius: 8px;
+    padding: 2rem;
+    background: linear-gradient(to right, rgb(247, 138, 37), rgb(238, 213, 74));
+    color: white;
+}
+
+.content_title {
+    margin-bottom: 2rem;
+}
+
+
+/*Chat with us container*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+label {
+    color: rgb(0, 0, 0);
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+input {
+    opacity: 80%;
+    margin-bottom: 2rem;
+    padding: 10px 20px;
+    min-height: 1.5rem;
+    min-width: 250px;
+}
+
+input:focus {
+    opacity: 100%;
+}
+
+textarea {
+    opacity: 80%;
+    margin-bottom: 2rem;
+    min-height: 4rem;
+    min-width: 250px;
+    padding: 20px 20px;
+}
+
+textarea:focus {
+    opacity: 100%;
+}
+
+.sendbtn {
+    opacity: 100%;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #ffa620;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sendbtn:hover {
+    opacity: 80%;
+}
+
+.chat_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.chat_box {
+    padding: 2rem;
+    border: #ffa620 2px solid;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.chat_title {
+    margin: 1rem;
+}
+
+.footer {
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_content {
+    background-color: orange;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    width: fit-content;
+    padding: 0.5rem 8rem;
 }
