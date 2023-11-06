@@ -139,6 +139,79 @@ body {
     color: white;
 }
 
+@media screen and (max-width: 1050px) {
+
+
+    .navbar_links {
+        display: none;
+    }
+
+    .navbar {
+        width: 85%;
+    }
+
+    .home_container {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+
+    .hero_image {
+        padding: 2rem 2rem;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .hero_image img {
+        width: 250px;
+        max-height: 300px;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .chat {
+        margin-left: 1rem;
+    }
+
+    .knowmore {
+        margin-right: 1rem;
+    }
+
+    .navbar_menu_container_links {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        padding: 1rem;
+        position: absolute;
+        right: 25px;
+        top: 60px;
+        margin-top: 1rem;
+        min-width: 150px;
+        min-height: 160px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        background-color: rgb(243, 178, 57);
+    }
+
+    .navbar_menu_container_links p {
+        text-decoration: none;
+        color: black;
+        margin: 0.2rem;
+    }
+
+    .navbar_menu_container_links p:hover {
+        color: white;
+    }
+
+}
 
 
 /*HOME*/
@@ -346,6 +419,8 @@ body {
 }
 
 
+
+
 /*Shop*/
 
 .shop {
@@ -362,6 +437,7 @@ body {
     align-items: center;
     height: 50vh;
 }
+
 
 
 /*Details page*/
@@ -412,6 +488,29 @@ body {
     opacity: 0.8;
 }
 
+@media screen and (max-width: 600px) {
+    .details_container {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .exercise_details {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .shoes_container {
     margin: 1rem 2rem;
     padding: 1rem 2rem;
@@ -420,6 +519,9 @@ body {
     row-gap: 2rem;
     column-gap: 2rem;
 }
+
+
+
 
 .shoes_cards {
     transition: transform .2s;
@@ -450,6 +552,9 @@ body {
 .shoe_price {
     color: Black;
 }
+
+
+
 
 .add_to_cart {
     margin-top: 0.5rem;
@@ -505,6 +610,46 @@ body {
 }
 
 
+@media screen and (max-width: 1050px) {
+    .shoes_container {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 2rem;
+    }
+
+    .shoes_card img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .slogan_container {
+        margin: 2rem 2rem;
+        padding: 0;
+        text-align: center;
+        /*background: linear-gradient(to right, rgb(233, 114, 4), rgb(233, 229, 28));*/
+
+    }
+
+    .shoe_slogan {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        font-family: 'Exo', sans-serif;
+        font-weight: 600;
+        /*color: white;*/
+        background: linear-gradient(to right, rgb(248, 122, 4), rgb(231, 197, 0));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .cart_logo {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+}
 
 /*Cart Page*/
 
@@ -853,4 +998,93 @@ textarea:focus {
     text-align: center;
     width: fit-content;
     padding: 0.5rem 8rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .search_container {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search {
+        width: 4rem;
+    }
+
+    .searchbtn {
+        width: 5rem;
+        border-radius: 8px;
+    }
+
+    .exercise_items {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 2rem;
+    }
+
+    .workout_cards {
+        text-align: center;
+        border-bottom: 2px solid rgb(187, 16, 16);
+    }
+
+    .workout_gif {
+        max-width: 300px;
+    }
+
+    .page-number-container {
+        display: flex;
+    }
+
+    .pagination-container {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .cart-item,
+    .cart-container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        row-gap: 0.5rem;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .cart-item .cart-product-total-price {
+        padding-right: 0.5rem;
+        justify-self: center;
+        font-weight: 700;
+    }
+
+    .cart-item .cart-product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-title,
+    .price,
+    .quantity,
+    .total {
+        display: none;
+    }
+
+    .cart-summary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid rgb(187, 187, 187);
+        padding-top: 2rem;
+    }
+
+    .subtotal {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
