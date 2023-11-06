@@ -67,6 +67,11 @@ body {
 }
 
 /*Navbar*/
+
+.navbar_menu {
+    display: none;
+}
+
 .navbar {
     display: flex;
     margin: 1rem 2rem;
@@ -140,6 +145,10 @@ body {
 }
 
 @media screen and (max-width: 1050px) {
+
+    .navbar_menu {
+        display: block;
+    }
 
 
     .navbar_links {
